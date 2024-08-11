@@ -25,7 +25,8 @@ export default function Login(){
         <div className='right-container'>            
             
             <form>
-                <h1>Admin   Login</h1>
+                <h1>Welcome</h1>
+                <p>Please Login To Admin Dashboard</p>
                 <Box
                 component="form"
                 sx={{
