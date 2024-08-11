@@ -5,7 +5,8 @@ import { Box, Typography, Paper, Card, CardContent, CardActions, Button, Grid, T
 const postsData = Array.from({ length: 50 }, (_, i) => ({
   post_id: i + 1,
   caption: `Post Caption ${i + 1}`,
-  media_url: `http://example.com/media${i + 1}`
+  // media_url: `http://example.com/media${i + 1}`
+  media_url: "https://images.pexels.com/photos/280204/pexels-photo-280204.jpeg"
 }));
 
 const PostsListingPage = () => {
