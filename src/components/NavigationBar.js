@@ -1,23 +1,11 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
 import PostAddIcon from '@mui/icons-material/PostAdd';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import CountDisplay from '../components/CountDisplay'
-import {Paper } from '@mui/material'
-// import { Paper, Box, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, HomeIcon, PersonIcon, PostAddIcon, MenuIcon,Toolbar, Typography } from '@mui/material';
+import  MenuIcon from '@mui/icons-material/MenuOutlined';
+import {Paper, Box, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from '@mui/material';
 
 const drawerWidth = 240;
 
@@ -54,7 +42,7 @@ function NavigationBar(props) {
       <Divider />
       <List>
         {['Home', 'User listing', 'Post listing'].map((text, index) => (
-          <Link to={`${text.split(' ').join('-').toLocaleLowerCase()}`}>
+          <Link to={`/${text.split(' ').join('-').toLocaleLowerCase()}`}>
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
