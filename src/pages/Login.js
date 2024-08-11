@@ -13,7 +13,7 @@ export default function Login(){
     })
     const handleLogin = () => {
         if(userDetails.username !== "" && userDetails.password !== ""){
-         navigate('/')
+         navigate('/home')
         }
     }
 
